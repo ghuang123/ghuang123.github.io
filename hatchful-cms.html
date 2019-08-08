@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Courtney Tam</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/qcq6kox.css">
+        <link rel="shortcut icon" type="image/x-icon" href='favicon.ico'/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126633980-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126633980-1');
+</script>
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="ui four item secondary menu">
+                <a href="index.html" class="item"><img src="assets/landing_2@3x.png" id="court"></a>
+                <a href="index.html" class="item menuItem"><span class="rectangle"></span> courtney <br>tam</a>
+                <a href="index.html#case-studies" id="caseStudies" class="item active menuItem"><span class="rectangle"></span> case <br> studies</a>
+                <a href="index.html#about-panels" id="aboutPanels" class="item menuItem"><span class="rectangle"></span> contact</a>
+        </div>
+        
+        <div class="ui fluid container top project full-height">
+            <div class="ui header project">
+                <h1 class="med-jumbo">Hatchful CMS</h1>
+            </div>
+
+            <div class="projectDetails">
+                <div class="leftPanel">
+                    <div class="title">
+                        Company
+                    </div>
+                    <div class="item">
+                        Shopify
+                    </div>
+
+                    <div class="title">
+                        Year
+                    </div>
+                    <div class="item">
+                        2018
+                    </div>
+
+                    <div class="title">
+                        Type
+                    </div>
+                    <div class="item">
+                        UX Research <br>
+                        Interaction Design
+                    </div>
+                </div>
+
+                <div class="description">
+                        Hatchful is a logo maker available on desktop and mobile with thousands of customizable templates for users to choose from.  Logos are added to the database through a webpage uploader. Once uploaded, changes cannot be made to the logo template, since its properties are already in the database. If changes were to happen, it needs to be removed from the database and re-uploaded again. This project aims to design a content management system (CMS) for the Hatchful team to simplify the uploading process, help handle any changes to logo templates, and ultimately help to grow and scale along with the team.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="section white">
+            <img class="large-img" src="assets/cms-prev.jpg"/>
+            <p class="caption">High fidelity concept of the upload template screen.</p>
+        </div>
+
+        <div class="section section-width white">
+            <p class="major-title">Role</p>
+            <P class="section-text">As the sole designer on this effort, I gathered all the technical requirements and constraints, worked with the team champion, developers, and end users of the product, to design the first version of the CMS. I completed all foundational work designing the information architecture with the intention of scaling the product with new features that are in the roadmap up until 2020. Through this process, I conducted user interviews and card sorting studies to further understand the mental models of the end user so that I can design a product that makes their work as easy and seamlessly as possible. </P>
+        </div>
+
+        <div class="section section-width grey">
+            <p class="major-title">Problem Space</p>
+            <div class="section-text">
+                As Hatchful continues to grow, add new logo templates, and scale in size, we need a management system to handle the app’s content. Currently, Hatchful only uses a webpage uploader to add new templates to the database. Although this method is a minimal viable solution, it does not fit the needs of the team in the long run. Here are a few issues identified:
+                <ul class="section-list">
+                    <li>Logo templates cannot be removed by the person who uploaded it using the uploader tool; only a developer who has access to the database can remove it</li>
+                    <li>Logo templates cannot be edited once uploaded unless removed and re-uploaded</li>
+                    <li>New features such as textures, custom colour palettes, multi typefaces are not supported</li>
+                    <li>Current uploader tool’s stress test can only test one logo template variation at a time. Each variation must be tested, then uploaded as a group.</li>
+                    <li>Multi-editing capabilities are not supported, creating more work and time wasted for the user.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section white">
+            <img class="large-img" src="assets/cms/htree.png"/>
+            <p class="caption">Simplified high level hierarchy tree diagram of the content management system.</p>
+        </div>
+
+        <div class="section section-width grey">
+            <p class="major-title">UX Goals</p>
+            <div class="section-text">To create a scalable content management system that increases the efficiency of uploading and editing logo templates. It is imperative that this system can handle multiple states of the application such as staging and in production so that the logo designers uploading the templates can work in parallel with the developers managing the database of logos. As Hatchful continues to grow and adds new features, this system must also scale with the team without compromising on the architecture and usability. </div>
+        </div>
+
+        <div class="section section-width white">
+            <p class="major-title">Process</p>
+            <p class="section-title">1. Context Gathering</p>
+            <div class="section-text">The initial project kickoff consisted of meeting with multiple members of the Hatchful team, to fully understand the problem space. I spoke with the primary user, the logo designer, who will be the person that uploads the logo, a few developers, who work with the templates that are in staging and push to production, and lastly the project manager, who oversees all initiatives regarding Hatchful. Throughout these interviews I used tools such as journey mapping and personas to fully understand the problem space in the user’s position.</div>
+            <p class="section-title">2. IA: Card Sorting</p>
+            <div class="section-text">Once all the necessary features and capabilities were gathered, I began defining each as an actionable item a user can complete. Next, 8 participants, each with different backgrounds (design, development, operations) were recruited to complete a card sorting study in person. From the results, which consisted of continuous feedback and explanations the participants were giving when walking me through their process, I gained a stronger understanding of how to organize the information. The studies also brought up a few edge cases and uncertainties that needed to be addressed when designing the solution.</div>
+            <div class="section-img" style="overflow: auto;">
+            <div class="column-left">
+            <img class="section-img" src="assets/cms/simmatrix.png"/>
+            </div>
+            <div class="column-right">
+                <img class="section-img" src="assets/cms/CSstudy.JPG"/>
+            </div>
+        </div>
+            <p class="caption">Card Sorting Study Results: similarity matrix (left), in-person study results (right).</p>
+
+            <p class="section-title">3. Creating the Hierarchy Tree</p>
+            <div class="section-text">After the studies were completed, I added the results to OptimalSort to generate similarity charts. From here, I could accurately analyze problematic areas to pin-point which actions were the most confusing for the user. This step ensures that the hierarchy tree designed will be easily understood by most, if not all users. This tree is also very helpful in syncing with the team; using it as a visualization tool in how the CMS will be laid out. </div>
+
+            <img class="large-img" src="assets/cms/whiteboard.jpeg"/>
+            <p class="caption">Quick whiteboarding IA activity with the design team to consolidate information.</p>
+
+
+            <p class="section-title">4. Defining the Scope Doc</p>
+            <div class="section-text">Syncing with the developers early on in the process is always beneficial especially when building out a massive project such as a CMS. After all the foundational information architectural work had been completed, I shared some of the results and findings from the card sorting studies and the interviews. I then walked through the hierarchy tree, which laid out all the actions that can be completed using the CMS. This meeting was mainly an open discussion as to what is possible / needed for version 1 of the CMS. After this meeting, a clearly defined Scope Doc was written up to document what will be designed into v1. </div>
+
+            <div class="section-img" style="overflow: auto;">
+            <div class="column-left">
+            <img class="section-img" src="assets/cms/wireframe1.jpg"/>
+            </div>
+            <div class="column-right">
+                <img class="section-img" src="assets/cms/wireframe2.jpg"/>
+            </div>
+        </div>
+            <p class="caption">Preliminary wireframes created to support the hierarchy tree.</p>
+
+
+            <p class="section-title">5. Designing v1</p>
+            <div class="section-text">Taking the scope doc and hierarchy tree, I first created rough wireframes, trying a few different navigational styles such as implementing a sidebar, top navigation, and initial launch screen.  The next major aspect of the CMS was to design the multi-editing experience,ince one of the major pain points identified was the inability to tag and add new editing features to multiple logo templates at once. After defining the main actions on each screen and how they would translate from screen to screen, I began designing the hi-fi layouts. Because this was an internal tool, visual design and styling was not the main priority. The hi-fi designs consisted of a simple grid layout with a sidebar navigation (best for scaling the product with new features) and task actions held at the top of the screen where it was the most accessible. Sorts and filters were implemented to easily toggle between states (staging vs. production) and different categories that the logo templates lived in. The screens underwent many design reviews and iterations before being prepped for developer hand-off. </div>
+            <img class="section-img" src="assets/cms/mid-fi.png"/>
+            <p class="caption">Low fidelity wireframes created to showcase the usability and architecture of the system.</p>
+        </div>
+
+         <div class="section section-width grey">
+            <p class="major-title">Conclusion</p>
+             <div class="section-text">The content management system is currently being developed starting September 2018. The system will include its own uploader tool that encompasses the current uploader capabilities with usability fixes and added functionality for new logo template features. The CMS will also be a hub to hold all logo templates, predefined colour palettes, textures, and typefaces. The main functionality is the multi-editing capability where multiple templates can be tagged for organizational and sorting purposes on the application, and logo attributes such as palettes, textures and typefaces can be added all at once. Next steps is to continuously evolve the CMS to be able to handle future features. </div>
+        </div>
+
+
+
+        <div class="linkToNextProject">
+            <div class="nextProject">Next Project:</div>
+            <div class="projectName">Hackathon Design</div>
+            <a href="qhacks.html">
+                <img class="navigationArrow next" src="assets/arrow-right_2@3x.png">
+            </a>
+        </div>
+
+        <div class="ui container footer">
+            <a href="mailto:courtney.ktam@gmail.com"><i class="fas fa-envelope footerIcon"></i></a>
+            <a href="http://www.dribbble.com/courtneyytam"><i class="fab fa-dribbble footerIcon"></i></a>
+            <a href="http://www.linkedin.com/in/courtneytam"><i class="fab fa-linkedin footerIcon"></i></a>
+            <a href="http://www.instagram.com/_courtneytam"><i class="fab fa-instagram footerIcon"></i></a>
+        </div>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js" async defer></script>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
